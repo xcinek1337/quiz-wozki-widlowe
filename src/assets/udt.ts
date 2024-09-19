@@ -2176,7 +2176,7 @@ const utdPart2 = [
 		img: '/pytanie101i245.png',
 	},
 ];
-const utdPart3 = [
+export const utdPart3 = [
 	// 183
 	{
 		question: 'W oparciu o tabelę określ jakie maksymalne obciążenie może przenieść gniazdo ładunkowe regału:',

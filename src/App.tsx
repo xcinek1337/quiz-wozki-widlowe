@@ -1,47 +1,7 @@
 import { useState } from 'react';
 
-const questions = [
-	{
-		question: 'Obsługującemu nie wolno:',
-		answers: [
-			'A. Podnosić ładunków, których masy nie potrafi określić',
-			'B. Kontrolować stanu technicznego urządzenia',
-			'C. Stosować się do zapisów zawartych w instrukcji eksploatacji',
-			'D. Dokonywać oględzin zewnętrznych urządzenia',
-		],
-		valid: 0,
-	},
-	{
-		question: 'Podczas próby hamulca zasadniczego maszt powinien być w pozycji:',
-		answers: [
-			'A. Pozycja masztu nie ma znaczenia',
-			'B. Przechylony „na siebie”',
-			'C. Przechylony „od siebie”',
-			'D. Pionowej',
-		],
-		valid: 0,
-	},
-	{
-		question: 'mroczny rycerz',
-		answers: ['bialego', 'czerwonego', 'zoltego', 'niebieskiego'],
-		valid: 0,
-	},
-	{
-		question: 'Lorem ipsimum haha',
-		answers: ['bialego', 'czerwonego', 'zoltego', 'niebieskiego'],
-		valid: 3,
-	},
-	{
-		question: 'Sprzedalem dzisiaj iphone',
-		answers: ['bialego', 'czerwonego', 'zoltego', 'niebieskiego'],
-		valid: 3,
-	},
-	{
-		question: 'w sobote jade do gniezna',
-		answers: ['bialego', 'czerwonego', 'zoltego', 'niebieskiego'],
-		valid: 1,
-	},
-];
+import { utdPart3 } from './assets/udt';
+import { pickRandomQuestions } from './assets/utils';
 
 function App() {
 	const [start, setStart] = useState<boolean>(false);
@@ -50,6 +10,8 @@ function App() {
 	const [count, setCount] = useState<number>(0);
 	const [currQuestion, setCurrQuestion] = useState<number>(0);
 
+	const questions = pickRandomQuestions(5, utdPart3);
+	
 	const handleNext = (numbQuestion: number) => {
 		if (answer === questions[numbQuestion].answers[questions[numbQuestion].valid]) {
 			setCount(count + 1);
@@ -105,6 +67,13 @@ function App() {
 												</label>
 											);
 										})}
+										{q.img && (
+											<img
+												className='mt-4'
+												src={q.img}
+												alt=''
+											/>
+										)}
 									</div>
 									<div>
 										<button
