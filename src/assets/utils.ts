@@ -1,3 +1,5 @@
+import { utdPart1, utdPart2, utdPart3 } from './udt';
+
 export type QuestionsType = {
 	question: string;
 	answers: string[];
@@ -13,19 +15,10 @@ const pickRandomIndex = (howMany: number, array: QuestionsType[]) => {
 		.splice(0, howMany);
 	return newArray;
 };
-export const pickRandomQuestions = (howMany: number, ...arrays: QuestionsType[][]) => {
-	const array = arrays[0];
-	const array1 = pickRandomIndex(howMany, array);
-	// const array2 = arrays[1];
-	// const array3 = arrays[2];
-	console.log('hehe', array1);
-	return array1
+export const pickRandomQuestions = (howManyPerSection: number) => {
+	const array1 = pickRandomIndex(howManyPerSection, utdPart1);
+	const array2 = pickRandomIndex(howManyPerSection, utdPart2);
+	const array3 = pickRandomIndex(howManyPerSection, utdPart3);
+	const result = array1.concat(array2).concat(array3);
+	return result;
 };
-
-// {
-// 	question:
-// 		'W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony B:',
-// 	answers: ['A. 3100 mm', 'B. 4836 mm', 'C. 4030 mm', 'D. Wszystkie odpowiedzi są niepoprawne'],
-// 	valid: 2,
-// 	img: '/pytanie207i208.png',
-// },

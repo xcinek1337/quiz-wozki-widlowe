@@ -1,4 +1,4 @@
-const utdPart1 = [
+export const utdPart1 = [
 	//dozoru technicznego – przepisów
 	//towaroznawstwa
 	//przepisów bhp
@@ -690,7 +690,7 @@ const utdPart1 = [
 			'C. Jest dopuszczalne, po uzgodnieniu z organem właściwej jednostki dozoru technicznego szczegółowych warunków eksploatacji',
 			'D. Jest dopuszczalne jednorazowo na pisemne polecenie przełożonego',
 		],
-		valid: 1,
+		valid: 2,
 	},
 	// 64
 	{
@@ -723,7 +723,7 @@ const utdPart1 = [
 			'C. Dozwolone pod warunkiem powiadomienia osób i wyposażeniu ich w środki ochrony indywidualnej',
 			'D. Wszystkie odpowiedzi są niepoprawne',
 		],
-		valid: 2,
+		valid: 3,
 	},
 	// 67
 	{
@@ -741,7 +741,7 @@ const utdPart1 = [
 			'C. W ciągu 14 dni po egzaminie w formie elektronicznej',
 			'D. Listem poleconym lub pocztą elektroniczną po upływie 30 dni roboczych od daty egzaminu',
 		],
-		valid: 0,
+		valid: 1,
 	},
 	// 69
 	{
@@ -845,7 +845,7 @@ const utdPart1 = [
 		valid: 0,
 	},
 ];
-const utdPart2 = [
+export const utdPart2 = [
 	//budowy wózka (część elektryczna, mechaniczna, hydraulika)
 	// wymagań, które musi spełnić kandydat na operatora
 	// wymagań, które musi spełnić operator
@@ -869,7 +869,7 @@ const utdPart2 = [
 			'C. Nieautoryzowanym uruchomieniem urządzenia',
 			'D. Dzieleniem strumienia na poszczególne obwody układu hydraulicznego',
 		],
-		valid: 0,
+		valid: 1,
 	},
 	// 82
 	{
@@ -1083,7 +1083,7 @@ const utdPart2 = [
 			'C. Może kontynuować pracę ze zmniejszoną prędkością jazdy',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3,
+		valid: 0,
 		img: '/pytanie103.png',
 	},
 	// 104
@@ -1165,7 +1165,7 @@ const utdPart2 = [
 			'C. Stan zużycia opon',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3,
+		valid: 2,
 	},
 	//112
 	{
@@ -1176,7 +1176,7 @@ const utdPart2 = [
 			'C. Wykorzystywane do zasilania kuchenek gazowych',
 			'D. Odpowiedź a i b jest prawidłowa',
 		],
-		valid: 3,
+		valid: 0,
 	},
 	//113
 	{
@@ -1193,7 +1193,7 @@ const utdPart2 = [
 			'C. Lampkę kontrolną ciśnienia oleju hydraulicznego',
 			'D. Lampkę kontrolną oświetlenia',
 		],
-		valid: 2,
+		valid: 0,
 		img: '/pytanie114.png',
 	},
 	//115
@@ -1205,7 +1205,7 @@ const utdPart2 = [
 			'C. Lampkę kontrolną ładowania akumulatora',
 			'D. Odpowiedź a i b jest prawidłowa',
 		],
-		valid: 3,
+		valid: 2,
 		img: '/pytanie115.png',
 	},
 	//116
@@ -1229,7 +1229,7 @@ const utdPart2 = [
 			'C. Lampkę kontrolną - przeciążenie',
 			'D. Lampkę kontrolną - nadmierna prędkość obrotowa silnika',
 		],
-		valid: 2,
+		valid: 0,
 		img: '/pytanie117.png',
 	},
 	//118
@@ -1286,7 +1286,7 @@ const utdPart2 = [
 			'C. Operator wykonuje próby z przeciążeniem',
 			'D. Operator dokonuje wpisu w dzienniku konserwacji',
 		],
-		valid: 0,
+		valid: 1,
 	},
 	//123
 	{
@@ -1297,7 +1297,7 @@ const utdPart2 = [
 			'C. Uruchomienie mechanizmu przesuwu bocznego',
 			'D. Wszystkie odpowiedzi są nieprawidłowe',
 		],
-		valid: 0,
+		valid: 2,
 		img: '/pytanie123.png',
 	},
 	//124
@@ -1337,7 +1337,7 @@ const utdPart2 = [
 			'C. Wymiary zewnętrzne widły nośnej',
 			'D. Symbol kontroli jakości',
 		],
-		valid: 1,
+		valid: 0,
 	},
 	//128
 	{
@@ -1449,7 +1449,7 @@ const utdPart2 = [
 		question:
 			'O ile wytyczne producenta nie stanowią inaczej, minimalna wysokość na jaką należy podnieść ładunek podczas próby szczelności wewnętrznej układu wychyłu masztu wynosi:',
 		answers: ['A. 100 mm', 'B. 500 mm', 'C. 2500 mm', 'D. Próby nie wykonuje się'],
-		valid: 1, // Odpowiedź B
+		valid: 2, // Odpowiedź c
 	},
 	//139
 	{
@@ -1460,7 +1460,7 @@ const utdPart2 = [
 			'C. Bez obciążenia',
 			'D. Z obciążeniem 125% nominalnego',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 2,
 	},
 	//140
 	{
@@ -1471,7 +1471,7 @@ const utdPart2 = [
 			'C. Ocenę szczelności zewnętrznej',
 			'D. Wszystkie odpowiedzi są poprawne',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//141
 	{
@@ -1482,7 +1482,7 @@ const utdPart2 = [
 			'C. Wychylając dźwignie sterownicze we wszystkie przewidziane przez wytwórcę kierunki',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//142
 	{
@@ -1494,7 +1494,7 @@ const utdPart2 = [
 			'C. Próby sprawdzające poprawność działania wykonuje tylko konserwator',
 			'D. Próbę z obciążeniem 125%',
 		],
-		valid: 0, // Odpowiedź A
+		valid: 0,
 	},
 	//143
 	{
@@ -1505,7 +1505,7 @@ const utdPart2 = [
 			'C. W miejscu specjalnie do tego przeznaczonym',
 			'D. Wyłącznie w pomieszczeniach ogrzewanych',
 		],
-		valid: 2, // Odpowiedź C
+		valid: 2,
 	},
 	//144
 	{
@@ -1516,7 +1516,7 @@ const utdPart2 = [
 			'C. Musi posiadać wentylację',
 			'D. Brak jednoznacznych wytycznych',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 2,
 	},
 	//145
 	{
@@ -1527,7 +1527,7 @@ const utdPart2 = [
 			'C. Sprawdzenie poprawności zamocowania akumulatora',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//146
 	{
@@ -1538,7 +1538,7 @@ const utdPart2 = [
 			'C. Posiadać zaświadczenie kwalifikacyjne do konserwacji wózków',
 			'D. Posiadać zaświadczenie kwalifikacyjne do obsługi wózków',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 1,
 	},
 	//147
 	{
@@ -1560,8 +1560,9 @@ const utdPart2 = [
 			'C. Opuscić ładunek (pod warunkiem nie zwiększenia zagrożenia)',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
-	}, //149
+		valid: 3,
+	},
+	//149
 	{
 		question: 'Sprawdzenie poprawności działania łącznika bezpieczeństwa STOP należy wykonać:',
 		answers: [
@@ -1570,7 +1571,7 @@ const utdPart2 = [
 			'C. Zawsze przed rozpoczęciem pracy',
 			'D. Nie ma konieczności sprawdzania poprawności działania',
 		],
-		valid: 2, // Odpowiedź C
+		valid: 2,
 	},
 	//150
 	{
@@ -1581,7 +1582,7 @@ const utdPart2 = [
 			'C. Protokół z badań UDT',
 			'D. Dyrektywa maszynowa',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 1,
 	},
 	//151
 	{
@@ -1592,7 +1593,7 @@ const utdPart2 = [
 			'C. Preferencji operatora',
 			'D. Wymagań właściciela terenu',
 		],
-		valid: 0, // Odpowiedź A
+		valid: 0,
 	},
 	//152
 	{
@@ -1603,7 +1604,7 @@ const utdPart2 = [
 			'C. Nie ma żadnego wpływu na stateczność wózka',
 			'D. Wszystkie odpowiedzi są niepoprawne',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 1,
 	},
 	//153
 	{
@@ -1614,7 +1615,7 @@ const utdPart2 = [
 			'C. Manewrowanie wózkiem na małej przestrzeni',
 			'D. Wszystkie odpowiedzi są poprawne',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//154
 	{
@@ -1625,7 +1626,7 @@ const utdPart2 = [
 			'C. Może spowodować utratę stateczności wózka',
 			'D. Wszystkie odpowiedzi są niepoprawne',
 		],
-		valid: 2, // Odpowiedź C
+		valid: 2,
 	},
 	//155
 	{
@@ -1636,7 +1637,7 @@ const utdPart2 = [
 			'C. Inspektor UDT w trakcie wykonywanych czynności',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 0, // Odpowiedź A
+		valid: 3,
 	}, //156
 	{
 		question:
@@ -1647,7 +1648,7 @@ const utdPart2 = [
 			'C. Kontynuuje pracę zmniejszając prędkość jazdy',
 			'D. Kontynuuje pracę zmniejszając prędkość poruszania się',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 1,
 	},
 	//157
 	{
@@ -1658,7 +1659,7 @@ const utdPart2 = [
 			'C. Nie musi podejmować żadnych działań',
 			'D. Odpowiedź b i c jest prawidłowa',
 		],
-		valid: 0, // Odpowiedź A
+		valid: 0,
 	},
 	//158
 	{
@@ -1669,7 +1670,7 @@ const utdPart2 = [
 			'C. Wcisnąć łącznik STOP',
 			'D. Odpowiedź a i b jest prawidłowa',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//159
 	{
@@ -1680,7 +1681,7 @@ const utdPart2 = [
 			'C. Powinny realizować kierunki ruchów zgodne z oznaczeniami',
 			'D. Odpowiedź a i c jest prawidłowa',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//160
 	{
@@ -1691,7 +1692,7 @@ const utdPart2 = [
 			'C. Dyrektywa maszynowa',
 			'D. Wewnętrzne przepisy zakładowe',
 		],
-		valid: 0, // Odpowiedź A
+		valid: 0,
 	},
 	//161
 	{
@@ -1702,7 +1703,7 @@ const utdPart2 = [
 			'C. Ustawie o dozorze technicznym',
 			'D. Wytycznych inspektora BHP',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 1,
 	},
 	//162
 	{
@@ -1713,8 +1714,9 @@ const utdPart2 = [
 			'C. Przechylony ,,od siebie"',
 			'D. Pionowej',
 		],
-		valid: 3, // Odpowiedź D
-	}, //163
+		valid: 1,
+	},
+	//163
 	{
 		question: 'Próbę hamulca zasadniczego należy przeprowadzać:',
 		answers: [
@@ -1723,7 +1725,7 @@ const utdPart2 = [
 			'C. Bez ładunku',
 			'D. Bez ładunku a następnie z ładunkiem nominalnym',
 		],
-		valid: 3, // Odpowiedź C
+		valid: 3,
 	},
 	//164
 	{
@@ -1735,7 +1737,7 @@ const utdPart2 = [
 			'C. Kontynuować pracę ze zmniejszoną prędkością jazdy',
 			'D. Odpowiedź a i b jest prawidłowa',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//165
 	{
@@ -1746,7 +1748,7 @@ const utdPart2 = [
 			'C. Poinformować Urząd Dozoru Technicznego',
 			'D. Kontynuować pracę z zachowaniem szczególnej ostrożności',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 1,
 	},
 	//166
 	{
@@ -1757,7 +1759,7 @@ const utdPart2 = [
 			'C. Wstrzymać eksploatację urządzenia i powiadomić inspektora UDT',
 			'D. Odpowiedź b i c jest prawidłowa',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 1,
 	},
 	//167
 	{
@@ -1768,13 +1770,13 @@ const utdPart2 = [
 			'C. Wstrzymuje eksploatację urządzenia i powiadamia przełożonego',
 			'D. Wszystkie odpowiedzi są poprawne',
 		],
-		valid: 2, // Odpowiedź C
+		valid: 2,
 	},
 	//168
 	{
 		question: 'Hamulec zasadniczy należy sprawdzać jadąc wózkiem podnośnikowym i hamując:',
 		answers: ['A. Do przodu', 'B. Do tyłu', 'C. W obu kierunkach', 'D. Hamulec sprawdza tylko konserwator'],
-		valid: 2, // Odpowiedź C
+		valid: 2,
 	},
 	//169
 	{
@@ -1785,7 +1787,7 @@ const utdPart2 = [
 			'C. Raz na tydzień',
 			'D. Zawsze przed rozpoczęciem pracy',
 		],
-		valid: 0, // Odpowiedź A
+		valid: 3,
 	},
 	//170
 	{
@@ -1796,7 +1798,7 @@ const utdPart2 = [
 			'C. Unieść widły na maksymalną wysokość',
 			'D. Przechylić maszt w pozycję "na siebie"',
 		],
-		valid: 0, // Odpowiedź A
+		valid: 0,
 	}, //171
 	{
 		question: 'Zakres czynności kontrolnych masztu wózka podnośnikowego obejmuje:',
@@ -1806,7 +1808,7 @@ const utdPart2 = [
 			'C. Sprawdzenie ogranicznika krańcowego położenia karetki',
 			'D. Wszystkie odpowiedzi są poprawne',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//172
 	{
@@ -1817,7 +1819,7 @@ const utdPart2 = [
 			'C. Transportować ładunek w dowolny wybrany przez operatora sposób',
 			'D. Manipulować pochyłem masztu w zależności od prędkości poruszania się',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 1,
 	},
 	//173
 	{
@@ -1828,7 +1830,7 @@ const utdPart2 = [
 			'C. Na dowolnej wysokości',
 			'D. Na wysokości ok 90 cm',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 1,
 	},
 	//174
 	{
@@ -1839,7 +1841,7 @@ const utdPart2 = [
 			'C. Zachowuje szczególną ostrożność',
 			'D. Odpowiedź b i c jest prawidłowa',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//175
 	{
@@ -1851,7 +1853,7 @@ const utdPart2 = [
 			'C. Porusza się tyłem',
 			'D. Odpowiedź a i b jest prawidłowa',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//176
 	{
@@ -1862,7 +1864,7 @@ const utdPart2 = [
 			'C. Dopuszczalne pod warunkiem zachowania szczególnej ostrożności',
 			'D. Dopuszczalne pod warunkiem obciążenia wózka ładunkiem uniesionym na minimalną wysokość',
 		],
-		valid: 0, // Odpowiedź A
+		valid: 0,
 	},
 	//177
 	{
@@ -1873,8 +1875,9 @@ const utdPart2 = [
 			'C. Poruszać się z bezpieczną prędkością',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
-	}, //178
+		valid: 3,
+	},
+	//178
 	{
 		question: 'Podczas jazdy wózkiem jezdniowym podnośnikowym z ładunkiem należy:',
 		answers: [
@@ -1883,13 +1886,13 @@ const utdPart2 = [
 			'C. Dostosować prędkość jazdy do panujących warunków',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//179
 	{
 		question: 'Wylot zaworu butli gazowej powinien być skierowany:',
 		answers: ['A. W dół', 'B. W górę', 'C. Poziomo', 'D. Pozycja nie ma znaczenia'],
-		valid: 0, // Odpowiedź A
+		valid: 0,
 	},
 	//180
 	{
@@ -1900,7 +1903,7 @@ const utdPart2 = [
 			'C. Wody mydlanej',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//181
 	{
@@ -1911,7 +1914,7 @@ const utdPart2 = [
 			'C. Jest zabroniona z uwagi na możliwości utraty przyczepności',
 			'D. Jest zabroniona z uwagi na zmianę parametrów technicznych oleju hydraulicznego',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 1,
 	},
 	//182
 	{
@@ -1922,7 +1925,7 @@ const utdPart2 = [
 			'C. Jest zabroniona z uwagi na zmianę parametrów technicznych oleju hydraulicznego',
 			'D. Jest dozwolona jeśli instrukcja eksploatacji na to zezwala',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	// 183 i 184 sa w part 3
 	//185
@@ -1934,7 +1937,7 @@ const utdPart2 = [
 			'C. Wymiary zewnętrzne transportowanego ładunku',
 			'D. Odpowiedź a i c jest prawidłowa',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//186
 	{
@@ -1945,7 +1948,7 @@ const utdPart2 = [
 			'C. Jechać przodem korzystając z pomocy drugiej osoby',
 			'D. Odpowiedź a i c jest prawidłowa',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//187
 	{
@@ -1956,7 +1959,7 @@ const utdPart2 = [
 			'C. Na dane adresowe producenta baterii',
 			'D. Odpowiedzi a i b są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//188
 	{
@@ -1967,7 +1970,7 @@ const utdPart2 = [
 			'C. Gwałtowne hamowanie przy jeździe z ładunkiem',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//189
 	{
@@ -1978,7 +1981,7 @@ const utdPart2 = [
 			'C. W decyzji zezwalającej na eksploatację',
 			'D. Wszystkie odpowiedzi są niepoprawne',
 		],
-		valid: 1, // Odpowiedź B
+		valid: 3,
 	},
 	//190
 	{
@@ -1989,7 +1992,7 @@ const utdPart2 = [
 			'C. Układu kierowniczego',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//191
 	{
@@ -2000,7 +2003,7 @@ const utdPart2 = [
 			'C. Sprawdzić, czy zakres posiadanych uprawnień do obsługi obejmuje zamontowany osprzęt',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//192
 	{
@@ -2011,7 +2014,7 @@ const utdPart2 = [
 			'C. Ciężar ładunku oraz masę własną wózka',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//193
 	{
@@ -2022,7 +2025,7 @@ const utdPart2 = [
 			'C. Przestrzegać instrukcji obsługi wózka',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//194
 	{
@@ -2033,7 +2036,7 @@ const utdPart2 = [
 			'C. Na diagramie udźwigu',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//195
 	{
@@ -2044,7 +2047,7 @@ const utdPart2 = [
 			'C. Sprawdzić, czy osprzęt wózka jest właściwie dobrany do ładunku',
 			'D. Wszystkie odpowiedzi są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//196
 	{
@@ -2055,7 +2058,7 @@ const utdPart2 = [
 			'C. Jest zabroniona',
 			'D. Jest dozwolona za zgodą właściciela zakładu bez dodatkowych wymagań',
 		],
-		valid: 1, // Odpowiedź A
+		valid: 1,
 	},
 	//197
 	{
@@ -2066,7 +2069,7 @@ const utdPart2 = [
 			'C. Utrzymuje pozycję siedzącą trzymając się mocno kierownicy',
 			'D. Odpowiedź b i c jest prawidłowa',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//198
 	{
@@ -2077,7 +2080,7 @@ const utdPart2 = [
 			'C. Skręcić gwałtownie koła w kierunku przechylenia, by spróbować zapobiec wywróceniu',
 			'D. Wszystkie odpowiedzi są niepoprawne',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//199
 	{
@@ -2088,15 +2091,16 @@ const utdPart2 = [
 			'C. Zawracania wózkiem na wzniesieniu',
 			'D. Wszystkie powyżej są prawidłowe',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//200
 	{
 		question:
 			'Jeżeli instrukcja wózka nie stanowi inaczej, następujące w toku eksploatacji maksymalne wydłużenie łańcucha nośnego może wynosić:',
 		answers: ['A. 3 cm', 'B. 3 mm', 'C. 3%', 'D. 10%'],
-		valid: 3, // Odpowiedź C
-	}, //201
+		valid: 2,
+	},
+	//201
 	{
 		question:
 			'Jeżeli instrukcja wózka nie stanowi inaczej, dopuszczalna ilość pękniętych płytek łańcucha nośnego (konstrukcji Flyera) wynosi:',
@@ -2106,7 +2110,7 @@ const utdPart2 = [
 			'C. 1 sztuka na każdy metr łańcucha',
 			'D. 0',
 		],
-		valid: 3, // Odpowiedź D
+		valid: 3,
 	},
 	//202
 	{
@@ -2118,7 +2122,7 @@ const utdPart2 = [
 			'C. 36 mm przy grubości nominalnej 40 mm',
 			'D. Zawsze wynosi 50% grubości nominalnej wideł',
 		],
-		valid: 1, // Odpowiedź A
+		valid: 2,
 	},
 	//203
 	{
@@ -2130,7 +2134,7 @@ const utdPart2 = [
 			'C. 25 mm przy grubości nominalnej 30 mm',
 			'D. Zawsze wynosi 50% grubości nominalnej wideł',
 		],
-		valid: 2, // Odpowiedź B
+		valid: 0,
 	},
 	//204
 	{
@@ -2142,7 +2146,7 @@ const utdPart2 = [
 			'C. 40 mm przy grubości nominalnej 60 mm',
 			'D. Zawsze wynosi 50% grubości nominalnej wideł',
 		],
-		valid: 1, // Odpowiedź A
+		valid: 1,
 	},
 	//205
 	{
@@ -2154,14 +2158,14 @@ const utdPart2 = [
 			'C. 50 mm przy grubości nominalnej 60 mm',
 			'D. Zawsze wynosi 50% grubości nominalnej wideł',
 		],
-		valid: 3, // Odpowiedź C
+		valid: 1,
 	},
 	//206
 	{
 		question:
 			'Jeżeli instrukcja wózka nie stanowi inaczej, maksymalne dopuszczalne rozgięcie widły względem wartości oryginalnej (zwykle 90 stopni), wynosi:',
 		answers: ['A. 1 cm', 'B. 3%', 'C. 3 stopnie', 'D. 0 stopni'],
-		valid: 3, // Odpowiedź D
+		valid: 2,
 	},
 	// 245
 	{
@@ -2172,7 +2176,7 @@ const utdPart2 = [
 			'C. Zbyt niskim ciśnieniu oleju',
 			'D. Odpowiedź A i C jest prawidłowa',
 		],
-		valid: 2, 
+		valid: 2,
 		img: '/pytanie101i245.png',
 	},
 ];
@@ -2182,7 +2186,7 @@ export const utdPart3 = [
 		question: 'W oparciu o tabelę określ jakie maksymalne obciążenie może przenieść gniazdo ładunkowe regału:',
 		answers: ['A. 1320 kg', 'B. 1100 kg', 'C. 2700 kg', 'D. 2200 kg'],
 		valid: 3, // Indeks prawidłowej odpowiedzi w tablicy answers (3 oznacza, że odpowiedź 'D' jest prawidłowa)
-        img: '/pytanie184.png',
+		img: '/pytanie184.png',
 	},
 	// 184
 	{
@@ -2205,8 +2209,8 @@ export const utdPart3 = [
 		question:
 			'W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony B:',
 		answers: ['A. 3100 mm', 'B. 4836 mm', 'C. 4030 mm', 'D. Wszystkie odpowiedzi są niepoprawne'],
-		valid: 2, 
-        img: '/pytanie207i208.png',
+		valid: 2,
+		img: '/pytanie207i208.png',
 	},
 	//209
 	{
@@ -2221,7 +2225,7 @@ export const utdPart3 = [
 		question:
 			'W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony B:',
 		answers: ['A. 4212 mm', 'B. 2700 mm', 'C. 3520 mm', 'D. Wszystkie odpowiedzi są niepoprawne'],
-		valid: 3, 
+		valid: 3,
 		img: '/pytanie209i210.png',
 	},
 	//211
@@ -2254,7 +2258,7 @@ export const utdPart3 = [
 			'W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony B:',
 		answers: ['A. 2800 mm', 'B. 3640 mm', 'C. 4368 mm', 'D. Wszystkie odpowiedzi są niepoprawne'],
 		valid: 3, // Odpowiedź C jest poprawna
-        img: '/pytanie213i214.png',
+		img: '/pytanie213i214.png',
 	},
 	//215
 	{
@@ -2269,7 +2273,7 @@ export const utdPart3 = [
 		question:
 			'W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku A:',
 		answers: ['A. 700 mm', 'B. 1200 mm', 'C. 4500 mm', 'D. 1800 mm'],
-		valid: 2, 
+		valid: 2,
 		img: '/pytanie216.png',
 	},
 	// 217
@@ -2321,7 +2325,7 @@ export const utdPart3 = [
 		question:
 			'W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku A:',
 		answers: ['A. 4860 mm', 'B. 8820 mm', 'C. 7070 mm', 'D. 10820 mm'],
-		valid: 2, // Odpowiedź c jest poprawna 
+		valid: 2, // Odpowiedź c jest poprawna
 		img: '/pytanie222i223.png',
 	},
 
@@ -2331,7 +2335,7 @@ export const utdPart3 = [
 			'W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku B:',
 		answers: ['A. 4860 mm', 'B. 5660 mm', 'C. 7070 mm', 'D. 10820 mm'],
 		valid: 1, // Odpowiedź b jest poprawna
-        img: '/pytanie222i223.png',
+		img: '/pytanie222i223.png',
 	},
 
 	// 224
@@ -2382,7 +2386,7 @@ export const utdPart3 = [
 			'W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku pobranego od strony A:',
 		answers: ['A. 1500 kg', 'B. 2000 kg', 'C. 2300 kg', 'D. 2500 kg'],
 		valid: 2, // Odpowiedź c jest poprawna
-        img: '/pytanie228i229.png',
+		img: '/pytanie228i229.png',
 	},
 
 	// 230
@@ -2436,7 +2440,7 @@ export const utdPart3 = [
 			'W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka, podnoszącego ładunek na wysokość 4000 mm:',
 		answers: ['A. 3300 kg', 'B. 4000 kg', 'C. 3400 kg', 'D. Wszystkie odpowiedzi są niepoprawne'],
 		valid: 2, // Odpowiedź c jest poprawna
-        img: '/pytanie234i235i236.png',
+		img: '/pytanie234i235i236.png',
 	},
 
 	// 236
@@ -2445,7 +2449,7 @@ export const utdPart3 = [
 			'W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka, podnoszącego ładunek na wysokość 5000 mm:',
 		answers: ['A. 4000 kg', 'B. 2700 kg', 'C. 3400 kg', 'D. Wszystkie odpowiedzi są niepoprawne'],
 		valid: 3, // Odpowiedź d jest poprawna
-        img: '/pytanie234i235i236.png',
+		img: '/pytanie234i235i236.png',
 	},
 
 	// 237
@@ -2463,7 +2467,7 @@ export const utdPart3 = [
 			'W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku jaką można bezpiecznie podnieść na wysokość 4000 mm, pobierając od strony A:',
 		answers: ['A. 2900 kg', 'B. 3600 kg', 'C. 3400 kg', 'D. 3200 kg'],
 		valid: 2, // Odpowiedź c jest poprawna
-        img: '/pytanie237i238.png',
+		img: '/pytanie237i238.png',
 	},
 
 	// 239
@@ -2481,7 +2485,7 @@ export const utdPart3 = [
 			'W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony A:',
 		answers: ['A. 1600 kg', 'B. 1900 kg', 'C. 2300 kg', 'D. 2500 kg'],
 		valid: 2,
-		img: '/pytanie239i240.png'
+		img: '/pytanie239i240.png',
 	},
 
 	// 241
@@ -2490,7 +2494,7 @@ export const utdPart3 = [
 			'W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony A:',
 		answers: ['A. 400 kg', 'B. 600 kg', 'C. 1500 kg', 'D. 2000 kg'],
 		valid: 3,
-        img: '/pytanie241i242.png',
+		img: '/pytanie241i242.png',
 	},
 
 	// 242
@@ -2507,7 +2511,7 @@ export const utdPart3 = [
 		question:
 			'W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony A:',
 		answers: ['A. 1400 kg', 'B. 1255 kg', 'C. 1040 kg', 'D. 840 kg'],
-		valid: 0, 
+		valid: 0,
 		img: '/pytanie2431i244.png',
 	},
 
@@ -2516,7 +2520,7 @@ export const utdPart3 = [
 		question:
 			'W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony B:',
 		answers: ['A. 1400 kg', 'B. 1255 kg', 'C. 1040 kg', 'D. 840 kg'],
-		valid: 2, 
+		valid: 2,
 		img: '/pytanie2431i244.png',
 	},
 ];
