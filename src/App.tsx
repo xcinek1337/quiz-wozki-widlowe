@@ -22,7 +22,7 @@ function App() {
 			return updatedAnswers;
 		});
 	};
-	
+
 	const handleRestart = () => {
 		QuestionFetch();
 		setUserAnswers([]);
@@ -50,7 +50,7 @@ function App() {
 	};
 
 	return (
-		<main className='relative px-5 font-arialRounded flex w-full h-screen justify-center bg-[#BA4949] items-center'>
+		<main className='relative px-5 font-arialRounded flex w-full min-h-screen justify-center bg-[#BA4949] items-center'>
 			{!start && (
 				<div className='font-arialRounded text-center'>
 					<h1 className='text-8xl font-arialRoundedBold'>QUIZ</h1>
@@ -78,7 +78,9 @@ function App() {
 									<h3 className='absolute top-5 right-1/2 translate-x-1/2 text-3xl md:top-10 '>
 										Pytanie {currQuestion + 1} / {questions.length}
 									</h3>
-									<p className='font-sans font-medium rounded-lg text-lg bg-[#C15C5C] p-2 md:text-xl md:p-4'>{q.question}</p>
+									<p className='font-sans font-medium rounded-lg text-lg bg-[#C15C5C] p-2 md:text-xl md:p-4'>
+										{q.question}
+									</p>
 									<div className='flex flex-col gap-3 items-start'>
 										{q.answers.map((answer, i) => {
 											return (
@@ -88,7 +90,7 @@ function App() {
 												>
 													<input
 														key={i}
-														className='mr-4  cursor-pointer'
+														className='mr-4 cursor-pointer focus:ring-orange-500'
 														name='question'
 														checked={userAnswers[currQuestion] === answer}
 														type='radio'
@@ -135,21 +137,69 @@ function App() {
 			)}
 
 			{showScore && (
-				<div className='text-center bg-[#C15C5C] py-6 rounded-xl text-xl md:px-10 md:py-10 md:text-2xl '>
-					<h2 className='font-arialRoundedBold text-4xl text-center'>Gratulacje!</h2>
-					<p className='my-5 '>
-						Odpowiedziałeś poprawnie na {count} z {questions.length} pytań
-					</p>
-					<p className={`${count >= 11 ? 'text-green-400' : 'text-blue-700'} font-bold text-3xl`}>
-						Test {count >= 11 ? 'zaliczony' : 'niezaliczony'}
-					</p>
-					<button
-						onClick={handleRestart}
+
+				<div className='flex flex-col'>
+					<div className='text-center mt-20 bg-[#C15C5C] py-6 rounded-xl text-xl md:px-10 md:py-10 md:text-2xl '>
 						
-						className='bg-white rounded-xl mt-3 font-bold text-[#Ba4949] px-3 py-1.5 md:px-4 md:py-2 md:mt-5 active:pt-1 transition'
-					>
-						Ponów próbę
-					</button>
+						<p className='my-5 '>
+							Odpowiedziałeś poprawnie na {count} z {questions.length} pytań
+						</p>
+						<p className={`${count >= 11 ? 'text-green-400' : 'text-blue-700'} font-bold text-3xl`}>
+							Test {count >= 11 ? 'zaliczony' : 'niezaliczony'}
+						</p>
+						<button
+							onClick={handleRestart}
+							className='bg-white rounded-xl mt-3 font-bold text-[#Ba4949] px-3 py-1.5 md:px-4 md:py-2 md:mt-5 active:pt-1 transition'
+						>
+							Ponów próbę
+						</button>
+					</div>
+					<ul>
+						{questions.map((q, questionIndex) => {
+							return (
+								<li
+									key={questionIndex}
+									className='flex  my-5 md:min-w-[650px] max-w-[650px] flex-col gap-4'
+								>
+									<p className='font-sans font-medium rounded-lg text-lg bg-[#C15C5C] p-2 md:text-xl md:p-4'>
+										{questionIndex+1}. {q.question}
+									</p>
+									<div className='flex flex-col gap-3 items-start'>
+										{q.answers.map((answer, answerIndex) => {
+											const isUserAnswer = userAnswers[questionIndex] === answer;
+											const isCorrectAnswer = answer === q.answers[q.valid];
+
+											return (
+												<label
+													key={answerIndex}
+													className={`flex font-mono ${
+														isCorrectAnswer ? 'bg-green-300' : isUserAnswer ? 'bg-rose-500' : 'bg-white'
+													} rounded-lg w-full px-3 py-2 md:text-xl md:p-4`}
+												>
+													<input
+														key={answerIndex}
+														disabled
+														className='mr-4'
+														type='radio'
+														checked={isUserAnswer}
+														value={answer}
+													/>
+													{answer}
+												</label>
+											);
+										})}
+										{q.img && (
+											<img
+												className='rounded-lg'
+												src={q.img}
+												alt=''
+											/>
+										)}
+									</div>
+								</li>
+							);
+						})}
+					</ul>
 				</div>
 			)}
 		</main>
